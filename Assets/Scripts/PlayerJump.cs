@@ -15,9 +15,7 @@ public class PlayerJump : MonoBehaviour
 
     public Animator anim;
 
-
     public Transform groundCheck;
-    
     
     private Rigidbody2D rb2d;
     //public Animator anim;
@@ -42,8 +40,6 @@ public class PlayerJump : MonoBehaviour
                 rb2d.velocity = Vector2.up * jumpForce;
             }
             
-            //anim.SetBool("JumpFall", rb2d.velocity.y != 0);
-
             if (Input.GetKey(KeyCode.Space) && isJumping == true)
             {
                 if(jumpTimeCounter > 0)

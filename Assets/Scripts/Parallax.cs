@@ -5,9 +5,11 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
     
-    public GameObject cameraPlayer;
+    [SerializeField]
+    private GameObject cameraPlayer;
+    [SerializeField]
+    private float speedParallax;
     private float length, startPos;
-    public float speedParallax;
 
     void Start()
     {

@@ -69,7 +69,7 @@ public class HungryBar : MonoBehaviour
         SetHealth(currentHealth);
     }
     
-    public void SetHealth(int health)
+    private void SetHealth(int health)
     {
         slider.value = health;
     }
